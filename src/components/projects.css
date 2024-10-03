@@ -1,0 +1,66 @@
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(61, 239, 233, 0.2);
+  }
+  
+  .modal-90w {
+    max-width: 90%;
+    margin: 1.75rem auto;
+  }
+  
+  .modal-content {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+  }
+  
+  .modal-header {
+    border-bottom: 1px solid rgba(61, 239, 233, 0.2);
+  }
+   
+  .modal-header .close {
+    color: white;
+  }
+  
+  .modal-body {
+    padding: 1rem;
+  }
+  .modal-90w {
+    max-width: 90%;
+  }
+
+  
+  .modal-content {
+    background-color: #1a1a1a;
+    color: white;
+    border: 1px solid rgba(61, 239, 233, 0.2);
+  }
+  
+  .modal-header {
+    border-bottom: 1px solid rgba(61, 239, 233, 0.2);
+  }
+  
+   .modal-header .btn-close {
+    color: white;
+    opacity: 0.8;
+  }
+   
+   .btn-outline-light:hover {
+    background-color: #3DEFE9;
+    border-color: #3DEFE9;
+    color: #1a1a1a;
+  }
+   
+   .project-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(61, 239, 233, 0.2);
+  }
