@@ -8,7 +8,7 @@ import react from '@astrojs/react';
 // https://astro.build/config
 export default defineConfig({
     devToolbar: { enabled: false },
-    site: 'https://rs691/rstewart.me',
-    base: '/rstewart.me/rstewart.me/',
+    site: 'https://rstewart.me/',
+    base: '/rstewart.me',
     integrations: [mdx(), sitemap(), react()],
 });
