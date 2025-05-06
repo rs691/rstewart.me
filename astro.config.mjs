@@ -9,6 +9,6 @@ import react from '@astrojs/react';
 export default defineConfig({
     devToolbar: { enabled: false },
     site: 'https://rs691/rstewart.me',
-    base: '/rstewart.me/',
+    base: '/rstewart.me/rstewart.me/',
     integrations: [mdx(), sitemap(), react()],
 });
