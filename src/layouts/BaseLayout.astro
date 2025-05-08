@@ -63,8 +63,8 @@ const { title, description } = Astro.props;
 				--bg-image-footer: url('/rstewart.me/src/assets/backgrounds/bg-footer-light-800w.jpg');
 			}
 			:root.loaded.theme-dark {
-				--bg-image-subtle-1: url('/rstewart.me/src/assets/backgrounds/bg-subtle-1-dark-800w.jpg');
-				--bg-image-subtle-2: url('/rstewart.me/src/assets/backgrounds/bg-subtle-2-dark-800w.jpg');
+				--bg-image-subtle-1: url('/rstewart.me/src/assets/backgrounds/bg-subtle-1-dark-800w.jpg'); /**no showing in deployed */
+				--bg-image-subtle-2: url('/rstewart.me/src/assets/backgrounds/bg-subtle-2-dark-800w.jpg'); 	/**no showing in deployed */
 				--bg-image-footer: url('/rstewart.me/src/assets/backgrounds/bg-footer-dark-800w.jpg');
 			}
 
@@ -95,7 +95,7 @@ const { title, description } = Astro.props;
 				isolation: isolate;
 				background:
 					/*noise*/
-					url('/rstewart.me/src/assets/backgrounds/noise.png') top center/220px repeat,
+					url('/rstewart.me/src/assets/noise.png') top center/220px repeat,
 					/*footer*/ var(--bg-image-footer) bottom center/var(--bg-gradient-size) no-repeat,
 					/*header1*/ var(--bg-image-main-curves) top center/var(--bg-gradient-size) no-repeat,
 					/*header2*/ var(--bg-image-main) top center/var(--bg-gradient-size) no-repeat,
