@@ -8,6 +8,6 @@ import react from '@astrojs/react';
 export default defineConfig({
   devToolbar: { enabled: false },
   site: 'https://rstewart.me', // Correct format for your domain
-  base: '/rstewart.me',                  // Remove or set to '/' for a root domain
+  base: '/rs691/rstewart.me/',                  // Remove or set to '/' for a root domain
   integrations: [mdx(), sitemap(), react()],
 });
