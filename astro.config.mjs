@@ -7,6 +7,7 @@ import react from '@astrojs/react';
 // https://astro.build/config
 export default defineConfig({
   devToolbar: { enabled: false },
-  site: 'https://rstewart.me', // Correct format for your domain                 // Remove or set to '/' for a root domain
+  site: 'https://rstewart.me', // Correct format for your domain        
+  base: '/rstewart.me', // Remove or set to '/' for a root domain
   integrations: [mdx(), sitemap(), react()],
 });
