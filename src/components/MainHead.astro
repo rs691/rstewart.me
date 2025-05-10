@@ -5,11 +5,15 @@ import '../styles/global.css';
 interface Props {
 	title?: string | undefined;
 	description?: string | undefined;
+	subtitle?: string | undefined;
+	tagline?: string | undefined;
 }
 
 const {
 	title = 'Robert Stewart: Personal Site',
 	description = 'The personal site of Robert Stewart',
+	subtitle = 'Welcome to my personal website',
+	tagline = 'Explore my work and projects',
 } = Astro.props;
 ---
 

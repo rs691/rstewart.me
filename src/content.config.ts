@@ -9,6 +9,9 @@ export const collections = {
 		loader: glob({ base: './src/content/work', pattern: '**/*.md', }),
 		schema: z.object({
 			title: z.string(),
+			// The slug is the file name without the extension.
+			slug: z.string().optional(),
+			subtitle: z.string().optional(),
 			description: z.string(),
 			publishDate: z.coerce.date(),
 			tags: z.array(z.string()),
