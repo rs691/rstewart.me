@@ -60,35 +60,35 @@ const { title, description, subtitle, tagline } = Astro.props;
 			/* These backgrounds are displayed below the fold, so we lazy load them
 			   once the `.loaded` class has been set.  */
 			:root.loaded {
-				/* --bg-image-subtle-1: url('/assets/backgrounds/bg-subtle-1-light-800w.jpg');
-				--bg-image-subtle-2: url('/assets/backgrounds/bg-subtle-2-light-800w.jpg');
-				--bg-image-footer: url('/assets/backgrounds/bg-footer-light-800w.jpg'); */
+				--bg-image-subtle-1: url('../../images/bg-subtle-1-light-800w.jpg');
+				--bg-image-subtle-2: url('../../images/bg-subtle-2-light-800w.jpg');
+				--bg-image-footer: url('../../images/bg-footer-light-800w.jpg');
 			}
 			:root.loaded.theme-dark {
-				--bg-image-subtle-1: url('../assets/bg-subtle-1-dark-800w.jpg'); /**no showing in deployed */
-				--bg-image-subtle-2: url('../assets/bg-subtle-2-dark-800w.jpg'); 	/**no showing in deployed */
-				/* --bg-image-footer: url('../assets/bg-footer-dark-800w.jpg'); */
+				--bg-image-subtle-1: url('../images/bg-subtle-1-dark-800w.jpg'); /**no showing in deployed */
+				--bg-image-subtle-2: url('../images/bg-subtle-2-dark-800w.jpg'); 	/**no showing in deployed */
+				--bg-image-footer: url('../images/bg-footer-dark-800w.jpg');
 			}
 
 			@media (min-width: 50em) {
 				:root {
 					--bg-scale: 1;
-					--bg-image-main: url('../assets/backgrounds/rainbow.svg');
+					--bg-image-main: url('../../images/rainbow.svg');
 				}
 				:root.theme-dark {
-					--bg-image-main: url('../assets/backgrounds/bg-main-dark-1440w.jpg');
+					--bg-image-main: url('../../images/bg-main-dark-1440w.jpg');
 				}
 
 				:root.loaded {
-					--bg-image-subtle-1: url('../assets/backgrounds/rainbow.svg');
-					--bg-image-subtle-2: url('../assets/backgrounds/bg-subtle-2-light-1440w.jpg');
-					--bg-image-footer: url('../assets/backgrounds/bg-footer-light-1440w.jpg');
+					--bg-image-subtle-1: url('../../images/bg-subtle-1-light-1440w.jpg');
+					--bg-image-subtle-2: url('../../images/bg-subtle-2-light-1440w.jpg');
+					--bg-image-footer: url('../../images/bg-footer-light-1440w.jpg');
 				}
 				:root.loaded.theme-dark {
-					--bg-image-subtle-1: url('../assets/backgrounds/bg-subtle-1-dark-800w.jpg');
-					--bg-image-subtle-2: url('../assets/backgrounds/bg-subtle-2-dark-800w.jpg');
-					--bg-image-footer: url('../assets/backgrounds/bg-footer-dark-800w.jpg');
-					--bg-image-footer: url('../assets/backgrounds/bg-footer-dark-1440w.jpg');
+					--bg-image-subtle-1: url('../../images/bg-subtle-1-dark-800w.jpg');
+					--bg-image-subtle-2: url('../../images/bg-subtle-2-dark-800w.jpg');
+					--bg-image-footer: url('../../images/bg-footer-dark-800w.jpg');
+					--bg-image-footer: url('../../images/bg-footer-dark-1440w.jpg');
 				}
 			}
 
@@ -96,8 +96,7 @@ const { title, description, subtitle, tagline } = Astro.props;
 				min-height: 100%;
 				isolation: isolate;
 				background:
-					/*noise*/
-					url('../assets/noise.png') top center/220px repeat,
+					/*noise*/ url('../../images/noise.png') top center/220px repeat,
 					/*footer*/ var(--bg-image-footer) bottom center/var(--bg-gradient-size) no-repeat,
 					/*header1*/ var(--bg-image-main-curves) top center/var(--bg-gradient-size) no-repeat,
 					/*header2*/ var(--bg-image-main) top center/var(--bg-gradient-size) no-repeat,
