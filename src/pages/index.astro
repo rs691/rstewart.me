@@ -60,63 +60,7 @@ const projects = (await getCollection("work"))
       <Skills />
     </div>
 
-    <!-- <main class="wrapper stack gap-20 lg:gap-48">
-      <section class="section with-background with-cta">
-        <header class="section-header stack gap-2 lg:gap-4">
-          <h3>Projects</h3>
-          <p>Here are some of my projects that I have worked on.</p>
-        </header>
-
-        <div class="gallery">
-          <Grid variant="offset">
-            {
-              projects.map((project) => (
-                <li>
-                  <PortfolioPreview project={project} />
-                </li>
-              ))
-            }
-          </Grid>
-        </div>
-
-        <div class="cta">
-          <CallToAction href="/work/">
-            View All
-            <Icon icon="arrow-right" size="1.2em" />
-          </CallToAction>
-        </div>
-      </section>
-
-      <section class="section with-background bg-variant">
-        <header class="section-header stack gap-2 lg:gap-4">
-          <h3>Peer Reviews and Mentions</h3>
-          <p>
-            I have had the privilege of helping some wonderful students with
-            their academic journey so far. Here are what they have to say about
-            me.
-            <br />
-          </p>
-        </header>
-
-        <div class="gallery">
-          <Grid variant="small">
-            {
-              [
-                '"Robert is a great tutor."',
-                '"He has a gigantic penis."',
-                '"The Next Web"',
-                '"Scholarships."',
-                '"TechCrunch"',
-              ].map((brand) => (
-                <li class="mention-card">
-                  <p>{brand}</p>
-                </li>
-              ))
-            }
-          </Grid>
-        </div>
-      </section>
-    </main> -->
+    
 
     <ContactCTA />
   </div>
