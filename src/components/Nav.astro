@@ -6,16 +6,17 @@ import type { iconPaths } from '../components/IconPaths';
 /** Main menu items */
 const textLinks: { label: string; href: string }[] = [
 	{ label: 'Home', href: '/rstewart.me/' },
-	{ label: 'Work', href: '/rstewart.me/work/' },
-	{ label: 'About', href: '/rstewart.me/about/' },
-	
+	{ label: 'Projects', href: '/rstewart.me/projects' },
+	{ label: 'About', href: '/rstewart.me/about' },
+	{ label: 'Tutoring', href: '/rstewart.me/tutoring' },
 ];
+
+
 
 /** Icon links to social media — edit these with links to your profiles! */
 const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[] = [
-	
 	{ label: 'GitHub', href: 'https://github.com/me', icon: 'github-logo' },
-	
+
 	{ label: 'LinkedIn', href: 'https://www.linkedin.com/in/me/', icon: 'linkedin-logo' },
 ];
 
@@ -30,8 +31,8 @@ const isCurrentPage = (href: string) => {
 
 <nav>
 	<div class="menu-header">
-		<a href="/rstewart.me/profile/" class="site-title">
-			<Icon icon="brackets-angle" color="var(--accent-regular)" size="1.7em" gradient />
+		<a href="/astro-tailwinds/profile/" class="site-title">
+			<Icon icon="brackets" color="var(--accent-regular)" size="1.7em" gradient />
 			Robert Stewart
 		</a>
 		<menu-button>

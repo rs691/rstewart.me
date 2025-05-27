@@ -1,17 +1,18 @@
 ---
-title: Project 1
+title: Pricing Tool
+subtitle: A brief description of Project 1 # Add this line
 publishDate: 2022-03-02 00:00:00
-img: /src/assets/backBlueDesign.png
+img: /astro-tailwinds/images/priceTool2.jpeg
 img_alt: icon
 description: |
- Interactive Web Form
+  Interactive Web Form
 tags:
-  - Design
-  - Dev
+  - Implementation
+  - Fuctionality
   - User Testing
 ---
 
-## Level-two heading
+## Pricing Estimate Tool 
 
 > Tell me and I forget. Teach me and I remember. Involve me and I learn.
 

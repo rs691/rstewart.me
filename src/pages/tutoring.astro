@@ -1,22 +1,26 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
+
 import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
-import possBack1 from '../../public/images/possBack1.png';
+import tutoringRobotPic from '../../public/images/tutoringRobotPic.jpg';
+import Testimonials from '../components/Testimonials.astro';
+
+
 ---
 
-<BaseLayout title="About | Robert Stewart" description="About Robert Stewart Lorem Ipsum">
+<BaseLayout title="Tutoring | Robert Stewart" description="About Robert Stewart Lorem Ipsum">
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero
-				title="About"
+				title="Tutoring"
 				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
 			>
-					<img
+				<img
 					width="1553"
 					height="873"
-					src={possBack1.src}
+					src={tutoringRobotPic.src}
 					alt="Robert Stewart at work with a colleague"
 				/>
 			</Hero>
@@ -44,20 +48,12 @@ import possBack1 from '../../public/images/possBack1.png';
 					</p>
 				</div>
 			</section>
-			<section>
-				<h2 class="section-title">Education</h2>
-				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Skills</h2>
-				<div class="content">
-					<p>officia unde omnis</p>
-				</div>
-			</section>
+		
+		
+
 		</main>
 
+		<Testimonials />
 		<ContactCTA />
 	</div>
 </BaseLayout>

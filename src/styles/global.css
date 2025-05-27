@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 /*
   The CSS in this style tag is based off of Bear Blog's default CSS.
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
@@ -99,6 +101,10 @@
   --gray-900: #141925;
   --gray-999-basis: 225, 31%, 5%;
   --gray-999: #090b11;
+
+  --black-100: #0A0B11;
+  --black-200: #1B1A1C;
+
 
   --accent-light: #1c0056;
   --accent-regular: #7611a6;

@@ -6,6 +6,7 @@
 import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
+import '../styles/global.css';
 
 interface Props {
 	title?: string | undefined;
@@ -36,9 +37,12 @@ const { title, description, subtitle, tagline } = Astro.props;
 		<style>
 			:root {
 				--_placeholder-bg: linear-gradient(transparent, transparent);
-				/* --bg-image-main: url('/src/assets/bg-main-light-800w.jpg');
-				--bg-image-main-curves: url('/src/assets/backgrounds/bg-main-light.svg'); */
-				/* --bg-image-subtle-1: var(--_placeholder-bg);
+				--bg-image-main: url('../../public/images/bg-main-light-800w.jpg');
+				--bg-image-main: url('../../public/images/light-back-second.svg');
+				
+				/* --bg-image-main-curves: url('../../public/images/bg-main-light22.svg'); */
+				--bg-image-main-curves: url('../../public/images/dark3colors.svg');
+				--bg-image-subtle-1: var(--_placeholder-bg);
 				--bg-image-subtle-2: var(--_placeholder-bg);
 				--bg-image-footer: var(--_placeholder-bg);
 				--bg-svg-blend-mode: overlay;
@@ -46,15 +50,16 @@ const { title, description, subtitle, tagline } = Astro.props;
 				--bg-image-aspect-ratio: 2.25;
 				--bg-scale: 1.68;
 				--bg-aspect-ratio: calc(var(--bg-image-aspect-ratio) / var(--bg-scale));
-				--bg-gradient-size: calc(var(--bg-scale) * 100%); */
+				--bg-gradient-size: calc(var(--bg-scale) * 100%); 
 				
 			}
 
 			:root.theme-dark {
-				/* --bg-image-main: url('../../public/images/bg-main-dark-800w.jpg'); */
-				/* --bg-image-main-curves: url('../../public/images/bg-main-dark.svg'); */
-				/* --bg-svg-blend-mode: darken; */
-				/* --bg-blend-mode: lighten; */
+				--bg-image-main: url('../../public/images/bg-main-dark-800w.jpg');
+				--bg-image-main-curves-2: url('../../public/images/bg-main-dark.svg');
+				--bg-image-main-curves: url('../../public/images/waves.svg');
+				/* --bg-image-main: url('../../public/images/backCool.svg'); */
+
 			}
 
 			/* These backgrounds are displayed below the fold, so we lazy load them
@@ -62,33 +67,33 @@ const { title, description, subtitle, tagline } = Astro.props;
 			:root.loaded {
 				--bg-image-subtle-1: url('../../public/images/bg-subtle-1-light-800w.jpg');
 				--bg-image-subtle-2: url('../../public/images/bg-subtle-2-light-800w.jpg');
-				--bg-image-footer: url('../../public/images/bg-footer-light-800w.jpg');
-			}
+				
 			:root.loaded.theme-dark {
-				/* --bg-image-subtle-1: url('../../public/images/bg-subtle-1-dark-800w.jpg'); 
-				--bg-image-subtle-2: url('../../public/images/bg-subtle-2-dark-800w.jpg');  */
-				/* --bg-image-footer: url('/src/assets/backgrounds/bg-footer-dark-800w.jpg'); */
+				--bg-image-subtle-1: url('../../public/images/bg-subtle-1-dark-800w.jpg');
+				--bg-image-subtle-2: url('../../public/images/bg-subtle-2-dark-800w.jpg');
+				--bg-image-footer: url('../../public/images/bg-footer-dark-800w.jpg');
 			}
 
 			@media (min-width: 50em) {
 				:root {
-					/* --bg-scale: 1;
-					--bg-image-main: url('../../public/images/rainbow.svg'); */
+					--bg-scale: 1;
+					--bg-image-main: url('../../public/images/rainbow.svg');
 				}
 				:root.theme-dark {
-					/* --bg-image-main: url('../../public/images/bg-main-dark-1440w.jpg'); */
+					--bg-image-main: url('../../public/images/bg-main-dark-1440w.jpg');
+					
 				}
 
 				:root.loaded {
-					/* --bg-image-subtle-1: url('../../public/images/rainbow.svg');
+					--bg-image-subtle-1: url('../../public/images/rainbow.svg');
 					--bg-image-subtle-2: url('../../public/images/bg-subtle-2-light-1440w.jpg');
-					--bg-image-footer: url('../../public/images/bg-footer-light-1440w.jpg'); */
+					--bg-image-footer: url('../../public/images/bg-footer-light-1440w.jpg');
 				}
 				:root.loaded.theme-dark {
-					/* --bg-image-subtle-1: url('../../public/images/noise.png');
+					--bg-image-subtle-1: url('../../public/images/noise.png');
 					--bg-image-subtle-2: url('../../public/images/bg-subtle-2-dark-800w.jpg');
 					--bg-image-footer: url('../../public/images/bg-footer-dark-800w.jpg');
-					--bg-image-footer: url('../../public/images/bg-footer-dark-1440w.jpg'); */
+					--bg-image-footer: url('../../public/images/bg-footer-dark-1440w.jpg');
 				}
 			}
 
@@ -97,7 +102,7 @@ const { title, description, subtitle, tagline } = Astro.props;
 				isolation: isolate;
 				background:
 					/*noise*/
-					url('/public/images/noise.png') top center/220px repeat,
+					url('../../public/images/noise.png') top center/220px repeat,
 					/*footer*/ var(--bg-image-footer) bottom center/var(--bg-gradient-size) no-repeat,
 					/*header1*/ var(--bg-image-main-curves) top center/var(--bg-gradient-size) no-repeat,
 					/*header2*/ var(--bg-image-main) top center/var(--bg-gradient-size) no-repeat,
