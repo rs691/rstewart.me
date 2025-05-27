@@ -2,7 +2,7 @@
 title: Web Forms
 subtitle: A brief description of Project 1 # Add this line
 publishDate: 2022-03-02 00:00:00
-img: /astro-tailwinds/images/purpleForm.svg
+img: /rstewart.me/images/purpleForm.svg
 img_alt: icon
 description: |
   Interactive Web Form

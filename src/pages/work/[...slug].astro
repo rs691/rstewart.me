@@ -1,13 +1,12 @@
 ---
 import { type CollectionEntry, getCollection } from 'astro:content';
 
-import BaseLayout from '../../layouts/BaseLayout.astro';
-
 import ContactCTA from '../../components/ContactCTA.astro';
 import Hero from '../../components/Hero.astro';
 import Icon from '../../components/Icon.astro';
 import Pill from '../../components/Pill.astro';
 import { render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
 
 interface Props {
 	entry: CollectionEntry<'work'>;
@@ -29,12 +28,11 @@ const { Content } = await render(entry);
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.description}>
-	<div class="stack gap-20" style="font-family: var(--font-roboto);">
+	<div class="stack gap-20" >
 		<div class="stack gap-15">
 			<header>
 				<div class="wrapper stack gap-2">
-					<a class="back-link" href="/work/"><Icon icon="arrow-left" /> Projects</a>
-					</div>
+					<a class="back-link" href="/rstewart.me/work/"><Icon icon="arrow-left" /> Projects</a>
 					<Hero title={entry.data.title} align="start">
 						<div class="details">
 							<div class="tags">
@@ -46,26 +44,12 @@ const { Content } = await render(entry);
 				</div>
 			</header>
 		</div>
-		
-
-		<div class="stack gap-15">
-			<header>
-				<div class="wrapper stack gap-2">
-					<a class="back-link" href="/work/"><Icon icon="arrow-left" /> Projects</a>
-					<Hero title={entry.data.title} align="start">
-						<div class="details">
-							<div class="tags">
-								{entry.data.tags.map((t) => <Pill>{t}</Pill>)}
-							</div>
-							<p class="description">{entry.data.description}</p>
-						</div>
-					</Hero>
-				</div>
 			</header>
 			<main class="wrapper">
 				<div class="stack gap-10 content">
 					{entry.data.img && <img src={entry.data.img} alt={entry.data.img_alt || ''} />}
 					<div class="content">
+						<!--  Render the content of the Markdown file -->
 						<Content />
 					</div>
 				</div>
@@ -73,7 +57,7 @@ const { Content } = await render(entry);
 		</div>
 		<ContactCTA />
 	</div>
-</BaseLayout>
+</BaseLayoutLa>
 
 <style>
 	header {
@@ -97,6 +81,13 @@ const { Content } = await render(entry);
 	.tags {
 		display: flex;
 		gap: 0.5rem;
+	}
+	.pill{
+		font-size: var(--text-sm);
+		padding: 0.5rem 1rem;
+		background: var(--blue-700);
+		color: var(--blue-0);
+		border-radius: 0.5rem;
 	}
 
 	.description {
