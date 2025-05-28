@@ -16,7 +16,7 @@ import Icon from './Icon.astro';
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		
+		gap: 2rem;
 		border-top: 1px solid var(--gray-800);
 		border-bottom: 1px solid var(--gray-800);
 		padding: 5rem 1.5rem;
@@ -28,7 +28,7 @@ import Icon from './Icon.astro';
 		font-size: var(--text-xl);
 		text-align: center;
 		max-width: 26ch;
-		padding-left: 17%;
+
 	}
 
 	aside > a:focus {
@@ -50,5 +50,29 @@ import Icon from './Icon.astro';
 			font-size: var(--text-3xl);
 			text-align: left;
 		}
+	}
+
+	@media (min-width: 1344px) {
+		aside {
+			padding: 7.5rem 10rem;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+		h2 {
+			max-width: 30ch;
+		}
+	}
+	aside > a {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-size: var(--text-lg);
+		color: var(--gray-200);
+		text-decoration: white;
+		padding: 0.5rem 1rem;
+		border-radius: 0.5rem;
+		background-color: var(--gray-800);
+		box-shadow: var(--shadow-sm);
 	}
 </style>
