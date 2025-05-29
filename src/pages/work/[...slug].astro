@@ -1,11 +1,11 @@
 ---
 import { type CollectionEntry, getCollection } from 'astro:content';
 
+import { render } from 'astro:content';
 import ContactCTA from '../../components/ContactCTA.astro';
 import Hero from '../../components/Hero.astro';
 import Icon from '../../components/Icon.astro';
 import Pill from '../../components/Pill.astro';
-import { render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 interface Props {
@@ -134,6 +134,7 @@ const { Content } = await render(entry);
 		text-decoration: 1px solid underline transparent;
 		text-underline-offset: 0.25em;
 		transition: text-decoration-color var(--theme-transition);
+		font-size: var(--text-base);
 	}
 
 	.back-link:hover,
